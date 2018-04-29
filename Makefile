@@ -1,5 +1,6 @@
 all: program
 
+.PHONY: clean
 
 program: build/main.o build/layout.o build/output.o build/move.o bin
 	gcc -Wall -Werror build/main.o build/layout.o build/output.o build/move.o -o bin/program
@@ -21,8 +22,6 @@ build:
 
 bin:
 	mkdir bin
-
-.PHONY: clean
 
 clean:
 	rm -rf bin build

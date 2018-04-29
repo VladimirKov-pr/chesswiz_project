@@ -8,8 +8,8 @@ program: build/main.o build/drawing.o build/output.o build/move.o bin
 build/main.o: src/main.c build
 	gcc -Wall -Werror -c src/main.c -o build/main.o
 
-build/layout.o: src/drawing.c build
-	gcc -Wall -Werror -c src/layout.c -o build/drawing.o
+build/drawing.o: src/drawing.c build
+	gcc -Wall -Werror -c src/drawing.c -o build/drawing.o
 
 build/output.o: src/output.c build
 	gcc -Wall -Werror -c src/output.c -o build/output.o

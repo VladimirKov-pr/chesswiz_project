@@ -2,7 +2,7 @@ all: program
 
 .PHONY: clean
 
-program: build/main.o build/drawing.o build/drawing.o build/move.o bin
+program: build/main.o build/drawing.o build/output.o build/move.o bin
 	gcc -Wall -Werror build/main.o build/drawing.o build/output.o build/move.o -o bin/program
 
 build/main.o: src/main.c build

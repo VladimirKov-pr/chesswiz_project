@@ -1,0 +1,13 @@
+*.exe
+*.o
+*.so
+*.7z
+*.dmg
+*.gz
+*.iso
+*.tar
+*.sql
+*.sqlite
+bin/program
+build/*.o
+bin/*.txt

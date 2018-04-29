@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "layout.h"
+#include "drawing.h"
 #include "move.h"
 #include "output.h"
 
@@ -11,7 +11,7 @@ int main()
 {	
 	char con;
 	char A[10][10];
-	layout(A);
+	drawing(A);
 	output(A);
 	char xx, xx1;
 	int x, x1;

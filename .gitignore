@@ -1,3 +1,6 @@
+*.com
+*.class
+*.dll
 *.exe
 *.o
 *.so
@@ -5,7 +8,11 @@
 *.dmg
 *.gz
 *.iso
+*.jar
+*.rar
 *.tar
+*.zip
+*.log
 *.sql
 *.sqlite
 bin/program

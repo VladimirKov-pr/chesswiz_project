@@ -1,17 +1,10 @@
-#include <stdio.h>
-#include "drawing.h"
-#include "move.h"
-#include "output.h"
-
-void PawnMove ();
-void PawnMoveWhite ();
-void PawnMoveBlack ();
+#include "uheader.h"
 
 int main()
 {	
 	char con;
 	char A[10][10];
-	drawing(A);
+	layout(A);
 	output(A);
 	char xx, xx1;
 	int x, x1;
@@ -64,7 +57,10 @@ int main()
 			if (yy1 == 8) {y1 = 1; flag++;}
 		} while (flag != 4);
 		printf("\n\n");	
-		PawnMove(y, x, y1, x1, A);
+		if(!move(y, x, y1, x1, A)) 
+		{
+			printf("Wrong move\n");
+		}
 		output(A);
 		printf("\n\nExit? (print 'y')\n");
 		scanf(" %c", &con);
